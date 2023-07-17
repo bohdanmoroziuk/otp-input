@@ -10,3 +10,9 @@ html {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
 }
+
+html,
+body,
+#app {
+  min-height: 100vh;
+}
