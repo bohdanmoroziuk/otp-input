@@ -1,6 +1,7 @@
 {
   "name": "otp-input",
   "version": "0.1.0",
+  "description": "OTP input component in Vue and TypeScript",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
