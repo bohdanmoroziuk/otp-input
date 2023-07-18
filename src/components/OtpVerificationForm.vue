@@ -1,11 +1,23 @@
 <script setup lang="ts">
+import { ref, computed } from 'vue';
+
 import OtpInput from '@/components/OtpInput.vue';
+
+const otpLength = 4;
+
+const otp = ref('');
+
+const canSubmit = computed(() => otp.value.length === otpLength);
+
+const handleSubmit = () => {
+  console.log('verify otp code:', otp.value);
+};
 </script>
 
 <template>
   <form
     class="otp-verification-form"
-    @submit.prevent="undefined"
+    @submit.prevent="handleSubmit"
   >
     <header class="otp-verification-form__header">
       <i class="otp-verification-form__icon bx bxs-check-shield"></i>
@@ -14,11 +26,15 @@ import OtpInput from '@/components/OtpInput.vue';
       </h4>
     </header>
     <main class="otp-verification-form__main">
-      <otp-input />
+      <otp-input
+        v-model="otp"
+        :length="otpLength"
+      />
     </main>
     <footer class="otp-verification-form__footer">
       <button
         class="otp-verification-form__button"
+        :class="{ 'otp-verification-form__button--active': canSubmit }"
         type="submit"
       >
         Verify OTP
