@@ -1,5 +1,11 @@
 # otp-input
 
+> OTP input component in Vue and TypeScript 
+
+## Preview
+
+![OTP Input](./preview.png)
+
 ## Project setup
 ```
 npm install
