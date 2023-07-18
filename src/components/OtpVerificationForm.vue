@@ -68,7 +68,7 @@ const handleSubmit = () => {
   justify-content: center;
   height: 65px;
   width: 65px;
-  background: #4070f4;
+  background: var(--primary-3);
   color: #fff;
   font-size: 2.5rem;
   border-radius: 50%;
@@ -90,16 +90,16 @@ const handleSubmit = () => {
   cursor: pointer;
   border-radius: 6px;
   pointer-events: none;
-  background: #6e93f7;
+  background: var(--primary-1);
   transition: all 0.2s ease;
 }
 
 .otp-verification-form__button--active {
-  background: #4070f4;
+  background: var(--primary-2);
   pointer-events: auto;
 }
 
 .otp-verification-form__button:hover {
-  background: #0e4bf1;
+  background: var(--primary-3);
 }
 </style>

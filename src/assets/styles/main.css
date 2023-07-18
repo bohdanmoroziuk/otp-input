@@ -1,3 +1,9 @@
+:root {
+  --primary-1: rgb(200, 230, 201);
+  --primary-2: rgb(129, 199, 132);
+  --primary-3: rgb(76, 175, 80);
+}
+
 *,
 *::before,
 *::after {
