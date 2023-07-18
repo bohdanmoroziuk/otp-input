@@ -18,6 +18,7 @@ module.exports = {
     //
     'vuejs-accessibility/form-control-has-label': 'off',
     'vuejs-accessibility/no-autofocus': 'off',
+    'no-shadow': 'off',
   },
   overrides: [
     {

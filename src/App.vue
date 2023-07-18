@@ -15,6 +15,6 @@ import OtpVerificationForm from '@/components/OtpVerificationForm.vue';
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #4070f4;
+  background: var(--primary-3);
 }
 </style>
